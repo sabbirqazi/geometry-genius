@@ -13,18 +13,47 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-3xl text-center font-bold">Frontend Helper</h1>
-    <p class="text-2xl text-center">Blog on HTML, CSS, Modern JS</p>
+    <section class="box-border rounded-md m-10 bg-gray-200 p-5">
+        <h1 class="text-3xl text-center font-bold ">Frontend Helper</h1>
+        <p class="text-2xl text-center">Blog on HTML, CSS, Modern JS</p>
+    </section>
+   
  <section class="">
       
-     <div class=" box-border rounded-md m-10 bg-emerald-300 ">
+     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
         <h1 class="text-3xl text-white font-bold mx-10" >1. What is DOM and what is the purpose of DOM?</h1>
-        <p class="text-2xl text-white  mx-10">DOM is a way to represent the webpage in a structured hierarchical way so that it will become easier for programmers and users to glide through the document.The Document Object Model (DOM) is a tool for web developers that allows them to create dynamic, interactive web pages that respond to user input and data changes in real time.Everything in webpage work as a object.With dom different type of activities happen in webpage like on button click go to another page.Facebook Like option is one kind of dom manipulation.</p> 
+        <p class="text-2xl text-white  mx-10 my-5">DOM is a way to represent the webpage in a structured hierarchical way so that it will become easier for programmers and users to glide through the document.The Document Object Model (DOM) is a tool for web developers that allows them to create dynamic, interactive web pages that respond to user input and data changes in real time.Everything in webpage work as a object.With dom different type of activities happen in webpage like on button click go to another page.Facebook Like option is one kind of dom manipulation.</p> 
         <H2 class="text-2xl text-white font-bold m-10">Purpose:</H2>
         <p class="text-2xl text-white  mx-10">To giving user a good experience webpage should have interactive system. For adding interactivity  to a button developers need DOM.To create dynamic webpage from static HTML webpage developers use DOM.</p>
      </div>
-     <div class=" box-border rounded-md m-10 bg-emerald-300 ">
-        <h1 class="text-3xl text-white font-bold mx-10" > </h1>
+     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10" >2. How will you select HTML elements using DOM? Name the DOM methods.</h1>
+        <p class="text-2xl text-white  mx-10 my-5">We can select HTML elements using different kind of methods.Using GetElementById method we can select an element through id.For selecting through class name we can use GetElementsByClassName Method,through GetElementsByClassName method we can select multiple elements.QuerySelector is another method for selecting single element.There is a another method for selecting multiple elements it is QuerySelectorAll.Through QuerySelectorAll we can access elements by id name and class name. </p>
+        <p class="text-2xl text-white  mx-10 my-3">Important DOM Methods are:</p>
+        <ol class="text-2xl text-white  mx-10 my-3">
+            <li>getElementId.</li>
+            <li>GetElementsByTagName</li>
+            <li>GetElementsByClassName</li>
+            <li>QuerySelector</li>
+            <li>QuerySelectorAll</li>
+            <li>innerHTML</li>
+            <li>CreateElement</li>
+            <li>AppendChild</li>
+            <li>RemoveChild</li>
+            <li>SetAttribute</li>
+        </ol>
+     </div>
+     <div class=" box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1  class="text-3xl text-white font-bold mx-10" >
+            3.What is event bubble?
+        </h1>
+        <p class="text-2xl text-white  mx-10 my-5">Event bubbling in JavaScript can be defined as the method by which an event which got triggered within a nested set of HTML elements gets captured by the innermost element and travels up the DOM tree hierarchy to its outermost element. Hence, as the event bubbles up through the various outer elements, the event listeners attached with them also get invoked in that same order.</p>
+     </div>
+     <div  class=" box-border rounded-md m-10 bg-gray-800 p-5">
+        <h1 class="text-3xl text-white font-bold mx-10">4. What is a callback function and why will you use it?</h1>
+        <p class="text-2xl text-white  mx-10 my-5">A JavaScript callback is a function which is to be executed after another function has finished execution.
+        A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function. <br>
+        We need callback functions because many JavaScript actions are asynchronous, which means they don't really stop the program (or a function) from running until they're completed, as you're probably used to. Instead, it will execute in the background while the rest of the code runs. </p>
      </div>
  </section>
 </body>
