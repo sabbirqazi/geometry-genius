@@ -166,4 +166,19 @@ document.getElementById("rectangle-calc-btn").addEventListener("click", function
     `;
     tbody.appendChild(tr);
   }
+//set the randomcolor
+  function colorChangeOnHover(cards) {
+    cards.forEach(function(card) {
+      card.addEventListener("mouseover", function() {
+        let color = "#" + Math.random().toString(16).slice(2, 8);
+        card.style.backgroundColor = color;
+      });
+      card.addEventListener("mouseout", function() {
+        card.style.backgroundColor = "";
+      });
+    });
+  }
+  
+  var cards = document.querySelectorAll(".card");
+  colorChangeOnHover(cards);
    
