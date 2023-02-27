@@ -20,7 +20,7 @@
          Geometry Genius</h1>
         </div>
         <div >
-            <a class="btn  btn-accent btn-xs sm:btn-md md:btn-md lg:btn-lg text-white" href="blog.html">Blog</a>
+            <a class="btn  btn-accent btn-xs sm:btn-md md:btn-md lg:btn-lg text-white" onclick=" window.location.href = 'blog.html'">Blog</a>
          
         </div>
       </div>
@@ -127,6 +127,98 @@
             </div>
           </div>
          <!-- fourth card -->
+
+         <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/rhombus.png" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title" id="Rhombus">Rhombus</h2>
+              <p>Area(A) = 0.5 * d1 * d2</p>
+              <form action="" class="flex gap-x-5 text-center">
+                <input
+                  type="text"
+                  id="rhombus-d1-value"
+                  placeholder="w"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+                <input
+                  type="text"
+                  placeholder="l"
+                  id="rhombus-d2-value"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+              </form>
+
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary btn-wide" id="Rhombus-calc-btn">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- fifth card -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/pentagon.png" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title" id="Pentagon">Pentagon</h2>
+              <p>Area(A) = 0.5 * p * b</p>
+              <form action="" class="flex gap-x-5 text-center">
+                <input
+                  type="text"
+                  id="pentagon-p-value"
+                  placeholder="w"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+                <input
+                  type="text"
+                  placeholder="l"
+                  id="pentagon-b-value"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+              </form>
+
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary btn-wide" id="Pentagon-calc-btn">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- sixth card -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/ellipse.png" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title" id="Ellipse">Ellipse</h2>
+              <p>Area (A) = &pi; * ab</p>
+              <form action="" class="flex gap-x-5 text-center">
+                <input
+                  type="text"
+                  id="ellipse-a-value"
+                  placeholder="w"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+                <input
+                  type="text"
+                  placeholder="l"
+                  id="ellipse-b-value"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+              </form>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary btn-wide mt-3" id="Ellipse-calc-btn">
+                 Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
            </div>
           </section>
      </main>  
