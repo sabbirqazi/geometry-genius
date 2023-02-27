@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="navbar bg-emerald-100 shadow-2xl lg:px-12">
+      <div class="navbar bg-emerald-100 shadow-xl lg:px-12">
         <div class="flex-1">
           <h1 class="text-3xl"><span class=" font-bold">Interactive</span> <br>
          Geometry Genius</h1>
@@ -25,7 +25,47 @@
         </div>
       </div>
     </header>
-  
-        
+    <main>
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+          <div
+            class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+           >
+          <!-- first card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl" id="my-element">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title" id="triangle">Triangle</h2>
+              <p>Area(A) = 0.5 * b * h</p>
+              <form action="" class="flex gap-x-5 text-center">
+                <input
+                  type="text"
+                  id="base-input-value"
+                  placeholder="b"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+                <input
+                  type="text"
+                  placeholder="h"
+                  id="height-input-value"
+                  class="input input-bordered input-sm w-[30%]"
+                />
+                <span class="text-lg">cm</span>
+              </form>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary btn-wide" id="triangle-calc-btn">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--  second card card  --> 
+          
+           </div>
+          </section>
+     </main>  
     </body>
     </html>
