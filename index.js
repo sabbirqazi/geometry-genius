@@ -143,4 +143,27 @@ document.getElementById("rectangle-calc-btn").addEventListener("click", function
     }
   });
   
+  //getting value
+  function getInputValue(id) {
+    const inputField = document.getElementById(id);
+    const inputFieldValue = parseFloat(inputField.value);
+    return inputFieldValue;
+  }
+  
+  function getElement(id) {
+    const element = document.getElementById(id);
+    const elementValue = element.innerText;
+    return elementValue;
+  }
+  //showing on table with dynamic elements
+  function setData(serial, name, area) {
+    const tbody = document.getElementById("table-container");
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${serial}</td>
+      <td>${name}</td>
+      <td>${area.toFixed(2)}<span>cm <sup>2</sup></span></td>
+    `;
+    tbody.appendChild(tr);
+  }
    
